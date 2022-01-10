@@ -1,0 +1,12 @@
+.links{
+    display: flex;
+    width: 100px;
+    height: 50px;
+}
+
+.navLink{
+    margin-left: 90px;
+    font-size: 40px;
+    color: rgb(52, 52, 94);
+}
+

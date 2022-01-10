@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import MainForm from "./Components/MainForm/mainForm"
+import LineChartWrapper from './Components/LineChartWrapper/lineChartWrapper';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LineChartConfirmed from './Components/LineChartConfirmed/lineChartConfirmed';
+import LineChartDeaths from './Components/LineChartDeaths/lineChartDeaths';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Router>
+    <div className="poster">
+    <Routes>
+      <Route path="/" element = {<MainForm />} />
+      <Route path="/logInForm" element = {<MainForm />} />
+      <Route path="/lineChartWrapper" element = {<LineChartWrapper />} />
+      <Route path="/confirmed" element = {<LineChartConfirmed />} />
+      <Route path="/deaths" element ={<LineChartDeaths />} />
+    </Routes> 
     </div>
+    </Router>
   );
 }
 

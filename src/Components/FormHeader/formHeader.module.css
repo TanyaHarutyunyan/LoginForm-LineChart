@@ -1,0 +1,10 @@
+.formHeaderTitle{
+    height: 15%;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    border-bottom: 2px solid #c06060;
+}
